@@ -1,0 +1,19 @@
+void setup(){
+  size(500,500);
+}
+void draw(){
+  background(0);
+  
+  for(int i=0;i<frameCount;i++){
+    float a = i/36.0;
+    float a2 = i/36.0*365/88;
+    stroke(255);
+    line(250+200*cos(a),250+200*sin(a),250+79*cos(a2),250+79*sin(a2));
+  }
+  fill(255,92,15);
+  ellipse(250,250,80,80);
+  float a = frameCount/36.0;
+  float a2 = frameCount/36.0*365/88;
+  ellipse(250+200*cos(a),250+200*sin(a),10,10);
+  ellipse(250+79*cos(a2),250+79*sin(a2),10,10);
+}
