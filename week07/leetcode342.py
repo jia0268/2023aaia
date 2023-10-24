@@ -4,7 +4,7 @@ class Solution:
             return False
 
         while n>1: # 3. 一直下去 比1大就一直做下去
-            if n%2 !=0: # 1. 如果n取2有餘數就失敗了
+            if n%4 !=0: # 1. 如果n取4有餘數就失敗了
                 return False
-            n=n//2 # 2. 新的n會是原本n除2  16//2 得到8
+            n=n//4 # 2. 新的n會是原本n除4  16//4 得到4
         return True
